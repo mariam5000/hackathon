@@ -9,3 +9,79 @@ body, html {
     justify-content: center; /* Centrar horizontalmente */
     align-items: center;     /* Centrar verticalmente */
 }
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  #root {
+    width: 100%;
+  }
+  
+  .container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  p {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  p.error {
+    color: red;
+    font-size: 16px;
+  }
+  
+  @media (max-width: 400px) {
+    .container {
+      padding: 15px;
+    }
+  
+    input[type="text"], button {
+      font-size: 14px;
+    }
+  
+    p {
+      font-size: 16px;
+    }
+  }
+  
